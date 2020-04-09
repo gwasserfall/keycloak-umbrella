@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  umbrella:
+    image: nrel/api-umbrella:latest
+  gatekeeper:
+    image: keycloak/keycloak-gatekeeper
+  proxy:
+    image: nginx

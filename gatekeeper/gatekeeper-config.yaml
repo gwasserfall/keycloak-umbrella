@@ -1,0 +1,14 @@
+discovery-url: http://localhost:8080/auth/realms/Smollan
+client-id: api-umbrella
+client-secret: ed0f9c2e-9b68-4000-bf6e-f58ce8828f9d
+listen: ':3001'
+enable-refresh-tokens: true
+redirection-url: http://localhost:3001
+encryption-key: <ENCRYPTION_KEY>
+upstream-url: http://localhost
+resources:
+  - uri: /admin
+    roles:
+      - umbrella-admin
+  - uri: /*
+secure-cookie: false
